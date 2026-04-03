@@ -9,26 +9,21 @@ const SafeAreaView = styled (RNSafeAreaView);
 export default function App() {
   return (
     <SafeAreaView className="flex-1  p-5 bg-background">
-      <Text className="text-xl font-bold text-blue-500">
-        Sayan
+      <Text className="text-7xl font-sans-extrabold">
+        Home
       </Text>
-      <Link href="/onBoarding" className="mt-4 px-4 py-2 bg-blue-500 rounded">
+      <Link href="/onBoarding" className="mt-4 font-sans-bold rounded bg-primary text-white p-4">
         Go to OnBoarding
       </Link>
-       <Link href="/(auth)/sign-in" className="mt-4 px-4 py-2 bg-blue-500 rounded">
+       <Link href="/(auth)/sign-in" className="mt-4 font-sans-bold rounded bg-primary text-white p-4">
         Go to sign-in
+      </Link>
+       <Link href="/(auth)/sign-up" className="mt-4 font-sans-bold rounded bg-primary text-white p-4">
+        Go to sign-up
       </Link>
 
 
-        <Link href="/subscriptions/spotify" className="mt-4 px-4 py-2 bg-blue-500 rounded">
-        Spotify Subscription
-      </Link>
-        <Link href={{
-          pathname: "/subscriptions/[id]",
-        params: {id:"claude"}
-        }}>
-        Go to sign-in
-      </Link>
+        
       
       
       
